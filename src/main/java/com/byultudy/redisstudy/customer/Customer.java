@@ -1,8 +1,14 @@
 package com.byultudy.redisstudy.customer;
 
 import jakarta.persistence.*;
-
-
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
 public class Customer {
 
@@ -10,7 +16,6 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "customerId")
     private Long id;
-
     private String name;
 
 }
