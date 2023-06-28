@@ -1,1 +1,0 @@
-insert into concert values(1 , 20000 , true);
